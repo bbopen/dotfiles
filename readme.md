@@ -1,5 +1,4 @@
-# Simon's dotfiles.
+# bbopen's dotfiles.
 
-For information on how to use these files, I did a post on Nettuts+:
+based on s10wen's dotfiles at <https://github.com/s10wen/dotfiles>
 
-<http://net.tutsplus.com/tutorials/tools-and-tips/setting-up-a-mac-dev-machine-from-zero-to-hero-with-dotfiles/>
