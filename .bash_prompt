@@ -78,6 +78,7 @@ function usernamehost() {
 
 # Build the prompt
 PS1="\n" # Newline
+PS1+="\\[" # Contain color sets
 PS1+="$style_path\w" # Working directory
 PS1+="\$(prompt_git)" # Git details
 PS1+="$style_chars\$ $RESET" # $ (and reset color)
