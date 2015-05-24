@@ -99,7 +99,7 @@ syntax on
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=4
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
@@ -147,6 +147,18 @@ noremap <leader>ss :call StripWhitespace()<CR>
 " Save a file as root (,W)
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
+" Set tabs to space
+set expandtab
+
+" Set tabs to equal four columns 
+set tabstop=4
+
+" Se reindentation to 4 columns
+set shiftwidth=4
+
+" Set tabs equal to 4 columns when in insert mode
+set softtabstop=4
+
 " Automatic commands
 if has("autocmd")
     " Enable file type detection
@@ -155,4 +167,6 @@ if has("autocmd")
     autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
     " Treat .md files as Markdown
     autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+    " Javascript
+    autocmd BufNewFile,BufRead *.js setfiletype javascript syntax=javascript
 endif
